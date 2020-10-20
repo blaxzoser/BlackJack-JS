@@ -15,32 +15,30 @@
     <header class="titulo">BlackJack</header>
     <div class="col text-center">
         <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
-        <button id="btnPedir" class="btn btn-primary">Perdir Carta</button>
-        <button id="btnDetener" class="btn btn-primary ">Detener</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-primary">Perdir Carta</button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-primary ">Detener</button>
     </div>
     <div class="row container">
         <div class="col">
             <h1>Jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
-                <!-- <img class="carta" src="./assets/cartas/10D.png">
-                <img class="carta" src="./assets/cartas/10D.png">
-                <img class="carta" src="./assets/cartas/10D.png">
-                <img class="carta" src="./assets/cartas/10D.png">
-                <img class="carta" src="./assets/cartas/10D.png"> -->
+            <div id="jugador-cartas" class="divCartas">
             </div>
         </div>
     </div>
     <div class="row container mt-2">
         <div class="col">
             <h1>Computadora 1 - <small>0</small></h1>
-            <div id="computadora-cartas">
-
+            <div id="computadora-cartas" class="divCartas">
             </div>
         </div>
     </div>
 
     <script src='./assets/js/underscore-min.js'></script>
     <script src='./assets/js/juego.js'></script>
+    <script>
+        console.log(miModulo);
+        miModulo.nuevoJuego();
+    </script>
 </body>
 
 </html>
